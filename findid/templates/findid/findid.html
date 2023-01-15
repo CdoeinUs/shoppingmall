@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>findid</title>
+  <link rel="stylesheet"  href={%static 'findid/css/findid_style.css'%}  type="text/css" /link>
+</head>
+
+<body>
+    <header class = "layout-header">
+    <button class = "layout-menu">
+      <img class = "img-menu" src={% static 'findid/images/메뉴 바.png'%}>
+    </button>
+    <a class = "layout-logo" href ="index.html" title="Psyche/메인페이지로 이동">
+      <img class = "img-logo" src={% static 'findid/images/프시케.jpg'%}>
+    </a>
+    <div class="layout-header-righttop">
+      <a>
+        로그인
+      </a>
+      <a>
+        <img class="img-mybag" src={% static 'findid/images/장바구니.png'%} style="width: 20px; height: 20px;">
+      </a>
+    </div>
+    <div class="layout-header-rightbot">
+      <form class = "layout-search-bar">
+        <input type ="text">
+        <input type ="image" src={% static 'findid/images/검색.png'%} style="height: =20px ; width: 20px; ">
+      </form>
+    </div>
+  </header>
+  <main class = "layout-main">  
+
+   <div class="Id-form">
+         <h1> ID찾기 </h1>
+    <form>
+      <input type="text" name="email" class="text-field" placeholder="가입하신 e-mail을 입력하세요">
+      <input type="tel" name="tel" class="text-field" placeholder="가입하신 전화번호를 입력하세요">
+      <input type="submit" value="ID찾기" class="submit-btn">
+    </form>
+  </div>
+     <div class="PW-form">
+         <h1> PW찾기 </h1>
+    <form>      
+      <input type="text" name="text" class="text-field" placeholder="ID를 입력하세요">
+
+      <input type="text" name="email" class="text-field" placeholder="가입하신 e-mail을 입력하세요">
+      <input type="tel" name="tel" class="text-field" placeholder="가입하신 전화번호를 입력하세요">
+      <input type="submit" value="PW찾기" class="submit-btn">
+    </form>
+  </div>
+  <div class="account-form">
+         <h1> 계정생성 </h1>
+    <form>      
+      <input type="text" name="text" class="text-field" placeholder="ID를 입력하세요">
+      <input type="text" name="email" class="text-field" placeholder="e-mail을 입력하세요">
+      <input type="password" name="password" class="text-field" placeholder="비밀번호를 입력하세요">
+      <input type="password" name="password" class="text-field" placeholder="비밀번호를 다시 입력하세요">
+      <input type="tel" name="tel" class="text-field" placeholder="전화번호를 입력하세요">
+      <input type="submit" value="계정 생성하기" class="submit-btn">
+    </form>
+  </div>
+  </main>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
